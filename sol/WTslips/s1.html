@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Form</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: yellow;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+            display: inline-block;
+            width: 200px; /* Fixed width for labels */
+            margin-bottom: 10px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="date"], textarea {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+        .radio-group input[type="radio"] {
+            margin-right: 5px; /* Reduced margin to move radio buttons closer */
+        }
+        #submitBtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 50px;
+        }
+        #clearBtn {
+            background-color: #2196F3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2><u>Project Management</u></h2>
+    <form action="submit.php" method="post">
+        <div class="form-group">
+            <label for="projectName">Project Name:</label>
+            <input type="text" id="projectName" name="projectName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="assignedTo">Assigned To:</label>
+            <input type="text" id="assignedTo" name "assignedTo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+        </div>
+
+        <div class="form-group">
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required>
+        </div>
+
+        <div class="form-group">
+            <label>Priority:</label>
+            <div class="radio-group">
+                <input type="radio" id="highPriority" name="priority" value="High"> High
+                <input type="radio" id="averagePriority" name="priority" value="Average"> Average
+                <input type="radio" id="lowPriority" name="priority" value="Low"> Low
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+
+        <div class="button-container">
+            <button type="submit" id="submitBtn">Submit</button>
+            <button type="reset" id="clearBtn">Clear</button>
+        </div>
+    </form>
+</body>
+</html>
+

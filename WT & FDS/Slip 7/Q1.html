@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navi Bar</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: lightgray;
+        }
+
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active){
+            background-color: darkgray;
+        }
+
+        .active{
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a style="color: white;" class="active" href="#home">Home</a></li>
+        <li><a href="#java">Java</a></li>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+    </ul>
+</body>
+</html>

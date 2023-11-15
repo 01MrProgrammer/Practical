@@ -1,0 +1,24 @@
+#s9
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate a random array of 50 integers
+random_data = np.random.randint(1, 100, 50)
+
+# Line Chart
+plt.figure(figsize=(10, 5))
+plt.plot(random_data, color='blue', marker='o', linestyle='-', linewidth=2, markersize=6)
+plt.title('Line Chart of Random Data')
+plt.xlabel('Data Points')
+plt.ylabel('Values')
+plt.grid(True)
+plt.show()
+
+# Scatter Plot
+plt.figure(figsize=(10, 5))
+plt.scatter(range(1, 51), random_data, color='red', marker='^')
+plt.title('Scatter Plot of Random Data')
+plt.xlabel('Data Points')
+plt.ylabel('Values')
+plt.grid(True)
+plt.show()

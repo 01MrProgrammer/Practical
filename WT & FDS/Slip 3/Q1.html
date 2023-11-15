@@ -1,0 +1,37 @@
+<!--Q.1) Write a program using html with following CSS specifications- [15]
+i. The background colour of the company name should be in green.
+ii. The text colour of the company name should be red.
+iii. The heading should be large –with font ''comic sans ms''
+iv. The description of the company should be displayed in blue color in a paragraph.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Information</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            margin: 20px;
+        }
+
+        #companyName {
+            background-color: green;
+            color: red;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #companyDescription {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="companyName">Company XYZ</h1>
+
+    <p id="companyDescription">
+        Welcome to Company XYZ! We are a leading company dedicated to providing high-quality services. Our mission is to deliver exceptional value to our customers.
+    </p>
+
+</body>
+</html>
