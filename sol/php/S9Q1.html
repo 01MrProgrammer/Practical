@@ -1,0 +1,33 @@
+<html>
+ <body>
+ <form action=secondprog.php method=post>
+ <label>Enter the string:*</label><br>
+ <input type='text' name='string1'><br><br>
+ <label>choice the separator:*</label><br>
+ <select name="separator">
+ <option value="">[select]</option>
+ <option value="#">#</option>
+ <option value="%">%</option>
+ <option value=",">,</option>
+ <option value="!">!</option>
+ </select><br><br>
+ <input type='radio' name="choice" value=1>separate 
+string<br>
+ <input type='radio' name="choice" value=2>replace 
+separator
+ <!-- for replacement of separator we need another 
+dropdownlist -->
+ <select name="newsep">
+ <option value="">[select]</option>
+ <option value="#">#</option>
+ <option value="%">%</option>
+ <option value=",">,</option>
+ <option value="!">!</option>
+ </select><br>
+ <input type='radio' name="choice" value=3>Get the 
+last word of String<br>
+ <br><input type=submit value=ok>
+ <br><input type=reset value=cancel>
+ </form>
+ </body>
+</html>
