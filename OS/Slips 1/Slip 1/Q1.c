@@ -1,13 +1,10 @@
 /*Program for lFu*/
 #include <stdio.h>
-
 struct frmnode
 {
     int pno, counter, frequency;
 } frames[20];
-
 int n;
-
 int page_found(int pno)
 {
     int fno;

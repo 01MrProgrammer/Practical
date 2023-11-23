@@ -1,12 +1,9 @@
 #include<stdio.h>
-
 struct frmnode
 {
     int pno;
 } frames[20];
-
 int n;
-
 int page_found(int pno)
 {
     int fno;

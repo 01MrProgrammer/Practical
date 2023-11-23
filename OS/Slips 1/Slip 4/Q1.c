@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 struct node
 {
   int pno,freq;

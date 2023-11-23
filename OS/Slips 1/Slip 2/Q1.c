@@ -4,7 +4,6 @@ struct frmnode
 {
     int pno;
 }frames[20];
-
 int n;
 int page_found(int pno)
 {
@@ -16,7 +15,6 @@ int page_found(int pno)
     }
     return -1;
 }
-
 int get_free_frame()
 { 
     int fno;
@@ -27,14 +25,12 @@ int get_free_frame()
     }
     return(-1);
 }
-
 int get_fifo_frame()
 {
     static int fno=-1;
     fno=(fno+1)%n;
     return fno;
 }
-
 main()
 {
     int p_request[]={3, 4, 5, 6, 3, 4, 7, 3, 4, 5, 6, 7, 2, 4, 6};
