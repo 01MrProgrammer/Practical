@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        
+        div {
+            margin-bottom: 20px;
+        }
+
+        .main {
+        
+            font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    
+        }
+        
+        body{
+            background-color: yellow;
+        }
+        label{
+            display: inline-block;
+            width: 90px;
+        }
+        .a{
+            display: inline-block;
+            width: 450px;
+            margin: auto;
+        }
+        .Sbtn{
+            background-color: green;
+            border-radius: 6px;
+        }
+        .Cbtn{
+            background-color: blue;
+            margin-left: 20px;
+            border-radius: 6px;
+        }
+        h2{
+            font-size: 6pt;
+            
+        }
+    </style>
+</head>
+<body >
+
+    <div class="main">
+        <div class="a">
+            <form >
+                <h2>Project Management</h2>
+                <div >
+                    <label class="inputName">Project name:</label>
+                    <input type="text" class="field" name="project name" placeholder="project name"><br>
+                </div>
+    
+                <div>
+                    <label class="inputName">Assigned to:</label>
+                    <select name="person" id="projectAssigned">
+                        <option value="Er Merry Petision">Er Merry Petision</option>
+                        <option value="Er Deepak Bhusan">Er Deepak Bhusan</option>
+                        <option value="Er Robert Watson">Er Robert Watson</option>
+                    </select><br>
+                    
+                </div>
+                
+                <div><label class="inputName">Start Date:</label>
+                    <input type="date" class="field" name="Sdate" ><br>
+                </div>
+                
+                <div><label class="inputName">End Date:</label>
+                    <input type="date" class="field" name="Edate"><br>
+                </div>
+                
+                <div>
+                    <label class="inputName">Priority:</label>
+                    <input type="radio" name="Priority" value="HTML">
+                    <label>High</label>
+                    <input type="radio" name="Priority" value="CSS">
+                    <label>Average</label>
+                    <input type="radio" name="Priority" value="JavaScript">
+                    <label>Low</label><br>
+                </div>
+                
+                
+                
+                <div>
+                    <label for="lname" class="inputName">Description:</label>
+                    <input type="text" class="field" name="lname"><br>
+                </div>
+                
+                <div>
+                    <button class="Sbtn">Submit</button><button class="Cbtn">Clear</button>
+                </div>
+              </form>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>
