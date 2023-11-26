@@ -1,0 +1,162 @@
+//s15
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Operations</title>
+</head>
+<body>
+    <h1>String Operations</h1>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <label for="inputString">Enter a string:</label>
+        <input type="text" id="inputString" name="inputString" value="<?php if (isset($_POST['inputString'])) echo $_POST['inputString']; ?>"><br><br>
+        
+        <input type="radio" name="operation" value="length"> Find Length<br>
+        <input type="radio" name="operation" value="vowels"> Count Vowels<br>
+        <input type="radio" name="operation" value="titlecase"> Convert to Title Case<br>
+        <input type="radio" name="operation" value="pad"> Pad with '*'<br>
+        <input type="radio" name="operation" value="whitespace"> Remove Leading Whitespaces<br>
+        <input type="radio" name="operation" value="reverse"> Reverse String<br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <?php
+    function findStringLength($str) {
+        $length = 0;
+        while (isset($str[$length])) {
+            $length++;
+        }
+        return $length;
+    }
+    
+    function countVowels($str) {
+        $vowels = ['a', 'e', 'i', 'o', 'u'];
+        $count = 0;
+        foreach ($vowels as $vowel) {
+            $count += substr_count($str, $vowel);
+        }
+        return $count;
+    }
+    
+    function convertToTitleCase($str) {
+        return ucwords($str);
+    }
+    
+    function padStringWithAsterisk($str) {
+        return '*' . $str . '*';
+    }
+    
+    function removeLeadingWhitespaces($str) {
+        return ltrim($str);
+    }
+    
+    function reverseString($str) {
+        return strrev($str);
+    }
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $inputString = $_POST["inputString"];
+        $operation = $_POST["operation"];
+        
+        echo "<h2>Results:</h2>";
+        
+        switch ($operation) {
+            case "length":
+                echo "Length of the string: " . findStringLength($inputString);
+                break;
+            case "vowels":
+                echo "Number of vowels: " . countVowels($inputString);
+                break;
+            case "titlecase":
+                $lowercase = strtolower($inputString);
+                echo "Lowercase: " . $lowercase . "<br>";
+                echo "Lowercase to Title case: " . convertToTitleCase($lowercase);
+                break;
+            case "pad":
+                echo "String padded with '*': " . padStringWithAsterisk($inputString);
+                break;
+            case "whitespace":
+                echo "String with leading whitespaces removed: " . removeLeadingWhitespaces($inputString);
+                break;
+            case "reverse":
+                echo "Reversed string: " . reverseString($inputString);
+                break;
+            default:
+                echo "Please select an operation.";
+        }
+    }
+    ?>
+</body>
+</html>
+
+//s16
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result</title>
+</head>
+<body>
+    <h1>Student Result</h1>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName"><br><br>
+        
+        <table>
+            <tr>
+                <th>Serial Number</th>
+                <th>Subject Name</th>
+                <th>Marks (out of 100)</th>
+            </tr>
+            <?php
+            for ($i = 1; $i <= 5; $i++) {
+                echo "<tr>";
+                echo "<td>$i</td>";
+                echo "<td><input type='text' name='subjectName[]'></td>";
+                echo "<td><input type='text' name='marks[]'></td>";
+                echo "</tr>";
+            }
+            ?>
+        </table>
+        <br>
+        <input type="submit" value="Calculate Result">
+    </form>
+    
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $studentName = $_POST["studentName"];
+        $subjectNames = $_POST["subjectName"];
+        $marks = $_POST["marks"];
+        
+        $totalMarks = 0;
+        foreach ($marks as $mark) {
+            $totalMarks += $mark;
+        }
+        
+        $totalSubjects = count($subjectNames);
+        $percentage = ($totalMarks / ($totalSubjects * 100)) * 100;
+        
+        if ($percentage >= 90) {
+            $grade = "A+";
+        } elseif ($percentage >= 80) {
+            $grade = "A";
+        } elseif ($percentage >= 70) {
+            $grade = "B";
+        } elseif ($percentage >= 60) {
+            $grade = "C";
+        } elseif ($percentage >= 50) {
+            $grade = "D";
+        } else {
+            $grade = "Fail";
+        }
+        
+        echo "<h2>Result:</h2>";
+        echo "<table border='1'>";
+        echo "<tr><td>Student Name:</td><td>$studentName</td></tr>";
+        echo "<tr><td>Total Marks:</td><td>$totalMarks</td></tr>";
+        echo "<tr><td>Percentage:</td><td>$percentage%</td></tr>";
+        echo "<tr><td>Grade:</td><td>$grade</td></tr>";
+        echo "</table>";
+    }
+    ?>
+</body>
+</html>

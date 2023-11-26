@@ -1,0 +1,1541 @@
+
+//s1
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Form</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: yellow;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+            display: inline-block;
+            width: 200px; /* Fixed width for labels */
+            margin-bottom: 10px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="date"], textarea {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+        .radio-group input[type="radio"] {
+            margin-right: 5px; /* Reduced margin to move radio buttons closer */
+        }
+        #submitBtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 50px;
+        }
+        #clearBtn {
+            background-color: #2196F3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2><u>Project Management</u></h2>
+    <form action="submit.php" method="post">
+        <div class="form-group">
+            <label for="projectName">Project Name:</label>
+            <input type="text" id="projectName" name="projectName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="assignedTo">Assigned To:</label>
+            <input type="text" id="assignedTo" name "assignedTo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+        </div>
+
+        <div class="form-group">
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required>
+        </div>
+
+        <div class="form-group">
+            <label>Priority:</label>
+            <div class="radio-group">
+                <input type="radio" id="highPriority" name="priority" value="High"> High
+                <input type="radio" id="averagePriority" name="priority" value="Average"> Average
+                <input type="radio" id="lowPriority" name="priority" value="Low"> Low
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+
+        <div class="button-container">
+            <button type="submit" id="submitBtn">Submit</button>
+            <button type="reset" id="clearBtn">Clear</button>
+        </div>
+    </form>
+</body>
+</html>
+
+
+//s2
+<!DOCTYPE html>
+<html>
+<head>
+<title>my city</title>
+<style>
+img{
+ border:5px solid white;
+ bgcolor:yellow;
+}
+h2{
+  color:blue;
+font-size:100px;
+}
+</style>
+</head>
+
+
+
+<body bgcolor="pink">
+    
+     <h2><center>NASHIK</center></h2>
+     <h1 style="color:white;">Landmarks of Nashik<h1>
+     <font color="DeepPink" size="5px"><b><u> Muktidham</u><b></font><br><br>
+     <font color="green" size="7px"><i>Kapaleshwar</i></font><br>
+     <p style="font-family:fantasy;color:#660000;"> <font  size="16px"><b>pandavleni caves</b>   </font></p>
+     <font color="#ff0066" size="3px" ><i><u> Nandur Madhmeshwar Bird Sanctuary</u></i></font></br><br><br><br>
+
+
+<marquee>Please come to see Nashik, Army camp and various holy sites </marquee>
+<img src=C:\Users\dell\Desktop\kanchan\nsk.jpg  alt="image of nashik" style="margin-left:7%;"><br><br><br>
+</body>
+</html>
+
+//s3
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS for the company name */
+        #company-name {
+            background-color: green;
+            color: red;
+            font-size: 36px;
+            font-family: "Comic Sans MS", cursive;
+        }
+
+        /* CSS for the company description */
+        .company-description {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="company-name">Your Company Name</h1>
+    <p class="company-description">This is a description of our company displayed in blue color in a paragraph.</p>
+</body>
+</html>
+
+//s4
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table,th,td
+{
+  padding:20px;
+}
+</style>
+</head>
+
+<body>
+<table border="1" style="margin-left:25%;margin-top:10%;">
+<tr>
+ <th colspan="4"> LIST OF BOOKS </th>
+</tr>
+<tr >
+    <th rowspan="2"> ITEM No</th>
+    <th rowspan="2"> ITEM NAME</th>
+    <th colspan="2">PRICE</th>
+</tr>
+<tr>
+     <th>RS</th>
+     <th>paise</th>
+</tr>
+<tr>
+     <th>1</th>
+     <td>PROGRAMMING IN PYTHON</td>
+     <td>500</td><td>50</td>
+</tr>
+<tr>
+      <th>2</th>
+      <td>PROGRAMMING IN JAVA</td>
+      <td>385</td>
+      <td>00</td>
+</tr>
+</body>
+</html>
+
+//s7
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>A simple navigation bar</title>
+      <link rel="stylesheet" href="topnav.css">
+   </head>
+   <body>
+      <nav id="topnav">
+         <a id="logo" class="nav-link" href="#">Home</a>
+         <a class="nav-link" href="#">Java</a>
+         <a class="nav-link" href="#">HTML</a>
+         <a class="nav-link" href="#">CSS</a>
+      </nav>
+   </body>
+</html>
+
+//s8
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Comparison</title>
+</head>
+<body>
+    <h1>String Comparison</h1>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <label for="string1">Enter the first string:</label>
+        <input type="text" id="string1" name="string1" value="<?php echo isset($_POST['string1']) ? $_POST['string1'] : ''; ?>"><br><br>
+
+        <label for="string2">Enter the second string:</label>
+        <input type="text" id="string2" name="string2" value="<?php echo isset($_POST['string2']) ? $_POST['string2'] : ''; ?>"><br><br>
+
+        <label>Select Comparison Operation:</label>
+        <input type="radio" name="operation" value="startsWith" <?php echo (isset($_POST['operation']) && $_POST['operation'] === 'startsWith') ? 'checked' : ''; ?>> Starts With
+        <input type="radio" name="operation" value="position" <?php echo (isset($_POST['operation']) && $_POST['operation'] === 'position') ? 'checked' : ''; ?>> Position
+        <input type="radio" name="operation" value="firstNChars" <?php echo (isset($_POST['operation']) && $_POST['operation'] === 'firstNChars') ? 'checked' : ''; ?>> First N Characters
+
+        <label for="n">Number of characters to compare (only for 'First N Characters' operation):</label>
+        <input type="text" id="n" name="n" value="<?php echo isset($_POST['n']) ? $_POST['n'] : ''; ?>"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $string1 = $_POST["string1"];
+        $string2 = $_POST["string2"];
+        $operation = $_POST["operation"];
+        
+        echo "<h2>Results:</h2>";
+
+        switch ($operation) {
+            case "startsWith":
+                if (strpos($string1, $string2) === 0) {
+                    echo "The small string appears at the start of the large string.<br><br>";
+                } else {
+                    echo "The small string does not appear at the start of the large string.<br><br>";
+                }
+                break;
+
+            case "position":
+                $position = strpos($string1, $string2);
+                if ($position !== false) {
+                    echo "Position of the small string in the big string: $position<br><br>";
+                } else {
+                    echo "The small string was not found in the big string.<br><br>";
+                }
+                break;
+
+            case "firstNChars":
+                $n = isset($_POST['n']) ? (int)$_POST['n'] : 0; // Get the value of 'n' from the form
+                $substring1 = substr($string1, 0, $n);
+                $substring2 = substr($string2, 0, $n);
+                if (strcasecmp($substring1, $substring2) === 0) {
+                    echo "First $n characters are the same (case-insensitive) in both strings.<br><br>";
+                } else {
+                    echo "First $n characters are different in the two strings.<br><br>";
+                }
+                break;
+        }
+    }
+    ?>
+</body>
+</html>
+
+//s9
+<!--Assignment-3 Set-B Q2-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations with Separator</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="inputString">Enter String:</label>
+        <input type="text" name="inputString" id="inputString" required>
+        <br>
+        <label for="separator">Choose a Separator:</label>
+        <select name="separator" id="separator">
+            <option value="#">#</option>
+            <option value="|">|</option>
+            <option value="%">%</option>
+            <option value="@">@</option>
+            <option value="!">!</option>
+            <option value=",">,</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $inputString = $_POST['inputString'];
+    $separator = $_POST['separator'];
+
+    // a. Split the string into separate words using the given separator.
+    $words = explode($separator, $inputString);
+    echo "Words after splitting with '$separator': <br>" . implode(", ", $words) . "<br><br>";
+
+    // b. Replace all the occurrences of the separator with a fixed separator (e.g., "*").
+    $replacedString = str_replace($separator, "*", $inputString);
+    echo "String after replacing '$separator' with '*': <br>$replacedString<br><br>";
+
+    // c. Find the last word in the given string using strrpos() and substr() functions.
+    $lastSeparatorPos = strrpos($inputString, $separator);
+    $lastWord = ($lastSeparatorPos !== false) ? substr($inputString, $lastSeparatorPos + 1) : $inputString;
+    echo "Last word in the string: <br>$lastWord<br><br>";
+}
+?>
+
+//s10
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Operations</title>
+</head>
+<body>
+    <h1>Number Operations</h1>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <label for="num1">Enter first number:</label>
+        <input type="text" id="num1" name="num1" value="<?php if(isset($_POST['num1'])) echo $_POST['num1']; ?>"><br><br>
+        
+        <label for="num2">Enter second number:</label>
+        <input type="text" id="num2" name="num2" value="<?php if(isset($_POST['num2'])) echo $_POST['num2']; ?>"><br><br>
+        
+        <input type="radio" name="operation" value="mod"> Mod<br>
+        <input type="radio" name="operation" value="power"> Power<br>
+        <input type="radio" name="operation" value="sum"> Sum<br>
+        <input type="radio" name="operation" value="factorial"> Factorial<br><br>
+        
+        <input type="submit" value="Calculate">
+    </form>
+    
+    <?php
+    function findMod($a, $b) {
+        return $a % $b;
+    }
+    
+    function findPower($a, $b) {
+        return pow($a, $b);
+    }
+    
+    function findSum($n) {
+        $sum = 0;
+        for ($i = 1; $i <= $n; $i++) {
+            $sum += $i;
+        }
+        return $sum;
+    }
+    
+    function findFactorial($n) {
+        if ($n == 0 || $n == 1) {
+            return 1;
+        } else {
+            return $n * findFactorial($n - 1);
+        }
+    }
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $num1 = $_POST["num1"];
+        $num2 = $_POST["num2"];
+        $operation = $_POST["operation"];
+        
+        echo "<h1>Results:</h1>";
+        
+        switch ($operation) {
+            case "mod":
+                echo "Mod: " . findMod($num1, $num2);
+                break;
+            case "power":
+                echo "Power: " . findPower($num1, $num2);
+                break;
+            case "sum":
+                echo "Sum of first $num1 numbers: " . findSum($num1);
+                break;
+            case "factorial":
+                echo "Factorial of $num2: " . findFactorial($num2);
+                break;
+            default:
+                echo "Please select an operation.";
+        }
+    }
+    ?>
+</body>
+</html>
+
+//s13
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Define CSS styles for the chessboard */
+        table {
+            border-collapse: collapse;
+            margin-left:250px;
+            border:2px solid black;
+        }
+        
+        td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+
+        /* Define alternate cell colors for the chessboard */
+        .white {
+            background-color: #ffffff;
+        }
+
+        .black {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <?php
+        // Loop to generate the chessboard pattern
+        for ($row = 1; $row <= 8; $row++) {
+            echo '<tr>';
+            for ($col = 1; $col <= 8; $col++) {
+                // Use CSS classes to style alternate cells
+                $class = ($row + $col) % 2 == 0 ? 'white' : 'black';
+                echo '<td class="' . $class . '"></td>';
+            }
+            echo '</tr>';
+        }
+        ?>
+    </table>
+</body>
+</html>
+
+/*alternate code*/
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       
+        table {
+            border-collapse: collapse;
+            margin-left: 250px;
+            border: 2px solid black;
+        }
+        td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+       
+        .white {
+            background-color: #ffffff;
+        }
+        .black {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class "white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+//s15
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Operations</title>
+</head>
+<body>
+    <h1>String Operations</h1>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <label for="inputString">Enter a string:</label>
+        <input type="text" id="inputString" name="inputString" value="<?php if (isset($_POST['inputString'])) echo $_POST['inputString']; ?>"><br><br>
+        
+        <input type="radio" name="operation" value="length"> Find Length<br>
+        <input type="radio" name="operation" value="vowels"> Count Vowels<br>
+        <input type="radio" name="operation" value="titlecase"> Convert to Title Case<br>
+        <input type="radio" name="operation" value="pad"> Pad with '*'<br>
+        <input type="radio" name="operation" value="whitespace"> Remove Leading Whitespaces<br>
+        <input type="radio" name="operation" value="reverse"> Reverse String<br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <?php
+    function findStringLength($str) {
+        $length = 0;
+        while (isset($str[$length])) {
+            $length++;
+        }
+        return $length;
+    }
+    
+    function countVowels($str) {
+        $vowels = ['a', 'e', 'i', 'o', 'u'];
+        $count = 0;
+        foreach ($vowels as $vowel) {
+            $count += substr_count($str, $vowel);
+        }
+        return $count;
+    }
+    
+    function convertToTitleCase($str) {
+        return ucwords($str);
+    }
+    
+    function padStringWithAsterisk($str) {
+        return '*' . $str . '*';
+    }
+    
+    function removeLeadingWhitespaces($str) {
+        return ltrim($str);
+    }
+    
+    function reverseString($str) {
+        return strrev($str);
+    }
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $inputString = $_POST["inputString"];
+        $operation = $_POST["operation"];
+        
+        echo "<h2>Results:</h2>";
+        
+        switch ($operation) {
+            case "length":
+                echo "Length of the string: " . findStringLength($inputString);
+                break;
+            case "vowels":
+                echo "Number of vowels: " . countVowels($inputString);
+                break;
+            case "titlecase":
+                $lowercase = strtolower($inputString);
+                echo "Lowercase: " . $lowercase . "<br>";
+                echo "Lowercase to Title case: " . convertToTitleCase($lowercase);
+                break;
+            case "pad":
+                echo "String padded with '*': " . padStringWithAsterisk($inputString);
+                break;
+            case "whitespace":
+                echo "String with leading whitespaces removed: " . removeLeadingWhitespaces($inputString);
+                break;
+            case "reverse":
+                echo "Reversed string: " . reverseString($inputString);
+                break;
+            default:
+                echo "Please select an operation.";
+        }
+    }
+    ?>
+</body>
+</html>
+
+//s16
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result</title>
+</head>
+<body>
+    <h1>Student Result</h1>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName"><br><br>
+        
+        <table>
+            <tr>
+                <th>Serial Number</th>
+                <th>Subject Name</th>
+                <th>Marks (out of 100)</th>
+            </tr>
+            <?php
+            for ($i = 1; $i <= 5; $i++) {
+                echo "<tr>";
+                echo "<td>$i</td>";
+                echo "<td><input type='text' name='subjectName[]'></td>";
+                echo "<td><input type='text' name='marks[]'></td>";
+                echo "</tr>";
+            }
+            ?>
+        </table>
+        <br>
+        <input type="submit" value="Calculate Result">
+    </form>
+    
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $studentName = $_POST["studentName"];
+        $subjectNames = $_POST["subjectName"];
+        $marks = $_POST["marks"];
+        
+        $totalMarks = 0;
+        foreach ($marks as $mark) {
+            $totalMarks += $mark;
+        }
+        
+        $totalSubjects = count($subjectNames);
+        $percentage = ($totalMarks / ($totalSubjects * 100)) * 100;
+        
+        if ($percentage >= 90) {
+            $grade = "A+";
+        } elseif ($percentage >= 80) {
+            $grade = "A";
+        } elseif ($percentage >= 70) {
+            $grade = "B";
+        } elseif ($percentage >= 60) {
+            $grade = "C";
+        } elseif ($percentage >= 50) {
+            $grade = "D";
+        } else {
+            $grade = "Fail";
+        }
+        
+        echo "<h2>Result:</h2>";
+        echo "<table border='1'>";
+        echo "<tr><td>Student Name:</td><td>$studentName</td></tr>";
+        echo "<tr><td>Total Marks:</td><td>$totalMarks</td></tr>";
+        echo "<tr><td>Percentage:</td><td>$percentage%</td></tr>";
+        echo "<tr><td>Grade:</td><td>$grade</td></tr>";
+        echo "</table>";
+    }
+    ?>
+</body>
+</html>
+
+
+//s17
+<?php
+// Define the associative array
+$ageArray = array( "kanchan" => "31","Ram" => "41","shubham" => "39", "shubhangi" => "40");
+
+// a) Ascending order sort by value
+asort($ageArray);
+echo "Ascending order sort by value:<br>";
+print_r($ageArray);
+
+// b) Ascending order sort by key
+ksort($ageArray);
+echo "<br><br>Ascending order sort by key:<br>";
+print_r($ageArray);
+
+// c) Descending order sort by value
+arsort($ageArray);
+echo "<br><br>Descending order sort by value:<br>";
+print_r($ageArray);
+
+// d) Descending order sort by key
+krsort($ageArray);
+echo "<br><br>Descending order sort by key:<br>";
+print_r($ageArray);
+?>
+
+//s18
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Associative Array Operations</title>
+</head>
+<body>
+    <h1>Menu-Driven Program for Associative Array Operations</h1>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <p>Select an operation:</p>
+        <input type="radio" name="operation" value="reverse"> Reverse key-value pairs<br>
+        <input type="radio" name="operation" value="traverse"> Traverse in random order<br>
+        <input type="radio" name="operation" value="convert"> Convert to variables<br>
+        <input type="radio" name="operation" value="display"> Display with keys<br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <?php
+    $ageArray = array("kanchan" => "31", "Ram" => "41", "shubham" => "39", "shubhangi" => "40");
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $selectedOperation = $_POST["operation"];
+
+        switch ($selectedOperation) {
+            case "reverse":
+                $reversedArray = array_flip($ageArray);
+                print_r($reversedArray);
+                break;
+            case "traverse":
+                shuffle($ageArray);
+                print_r($ageArray);
+                break;
+            case "convert":
+                extract($ageArray);
+                echo "kanchan: $kanchan, Ram: $Ram, shubham: $shubham, shubhangi: $shubhangi";
+                break;
+            case "display":
+                foreach ($ageArray as $key => $value) {
+                    echo "$key: $value<br>";
+                }
+                break;
+            default:
+                echo "Invalid choice. Please select a valid option.";
+                break;
+        }
+    }
+    ?>
+</body>
+</html>
+
+
+//s19
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Manipulation</title>
+</head>
+<body>
+    <h1>String Manipulation</h1>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <label for="sentence">Enter a sentence:</label>
+        <input type="text" id="sentence" name="sentence" value="<?php if (isset($_POST['sentence'])) echo $_POST['sentence']; ?>"><br><br>
+        
+        <label for="word">Enter a word:</label>
+        <input type="text" id="word" name="word" value="<?php if (isset($_POST['word'])) echo $_POST['word']; ?>"><br><br>
+        
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" value="<?php if (isset($_POST['position'])) echo $_POST['position']; ?>"><br><br>
+        
+        <label for="numChars">Number of characters:</label>
+        <input type="text" id="numChars" name="numChars" value="<?php if (isset($_POST['numChars'])) echo $_POST['numChars']; ?>"><br><br>
+        
+        <input type="radio" name="operation" value="delete"> Delete part of sentence<br>
+        <input type="radio" name="operation" value="insert"> Insert word into sentence<br>
+        <input type="radio" name="operation" value="replace"> Replace characters/words in sentence<br>
+        <br>
+        
+        <input type="submit" value="Perform Operation">
+    </form>
+    
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $sentence = $_POST["sentence"];
+        $word = $_POST["word"];
+        $position = $_POST["position"];
+        $numChars = $_POST["numChars"];
+        $operation = $_POST["operation"];
+        
+        echo "<h2>Result:</h2>";
+        
+        switch ($operation) {
+            case "delete":
+                $newSentence = substr_replace($sentence, "", $position, $numChars);
+                echo "Sentence after deleting: $newSentence";
+                break;
+            case "insert":
+                $newWord = $word . ' ';
+                $newSentence = substr_replace($sentence, $newWord, $position, 0);
+                echo "Sentence after inserting: $newSentence";
+                break;
+            case "replace":
+                $newSentence = substr_replace($sentence, $word, $position, strlen($word));
+                echo "Sentence after replacing: $newSentence";
+                break;
+           
+            default:
+                echo "Please select an operation.";
+        }
+    }
+    ?>
+</body>
+</html>
+
+//s20
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Operations</title>
+</head>
+<body >
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+<h2>Enter choice :</h2>
+<input type="radio" name="ch" value=1> split an array into chunks<br>
+<input type="radio" name="ch" value=2> Sort array by values without changing key values <br>
+<input type="radio" name="ch" value=3> Filter odd elements from array <br>
+
+<br>
+
+<input type="submit" value="SUBMIT">  <input type="reset" value="CLEAR">
+</form>
+</body>
+</html>
+
+<html>
+<body >
+<?php
+function is_odd($var)
+{
+    if ($var % 2 == 1)
+        return $var;
+}
+
+$choice = isset($_POST['ch']) ? $_POST['ch'] : '';
+
+$arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5, 'f' => 6, 'g' => 7, 'h' => 8);
+$arr1 = array('l' => 11, 'm' => 2, 'n' => 33, 'o' => 44, 'p' => 5, 'q' => 66, 'r' => 77, 's' => 8);
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    switch ($choice) {
+        case 1:
+            
+
+            // Split the array into chunks of size 3
+            $chunks = array_chunk($arr, 4);
+            echo "<br>Array split into chunks:<br>";
+            print_r($chunks);
+            break;
+        case 2:
+            asort($arr);
+            echo "Array in ascending order:<br>";
+            print_r($arr);
+            arsort($arr);
+            echo "<br>Array in descending order:<br>";
+            print_r($arr);
+            break;
+        case 3:
+            print_r(array_filter($arr, 'is_odd'));
+            break;
+       
+    }
+    echo "<br><a href='".$_SERVER['PHP_SELF']."'>RETURN</a>";
+}
+?>
+</font>
+</body>
+</html>
+
+
+//s21
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spring High Temperatures</title>
+</head>
+<body>
+    <h1>Spring High Temperatures</h1>
+
+    <?php
+    // Create an array of 30 high temperatures (example values)
+    $highTemperatures = [
+        65, 68, 70, 72, 75, 78, 80, 82, 85, 88,
+        90, 92, 85, 80, 78, 75, 72, 70, 68, 65,
+        60, 62, 64, 67, 70, 73, 76, 78, 80, 82
+    ];
+
+    // Calculate the average high temperature
+    $averageTemperature = array_sum($highTemperatures) / count($highTemperatures);
+
+    // Sort the temperatures in descending order
+    rsort($highTemperatures);
+
+    // Get the five warmest and five coolest high temperatures
+    $warmestTemperatures = array_slice($highTemperatures, 0, 5);
+   
+    echo "<p>Average High Temperature: " . round($averageTemperature, 2) . "&deg;F</p>";
+
+    echo "<h2>Warmest High Temperatures:</h2>";
+    echo "<ul>";
+    foreach ($warmestTemperatures as $temp) {
+        echo "<li>" . $temp . "&deg;F</li>";
+    }
+    echo "</ul>";
+
+    
+    ?>
+
+</body>
+</html>
+
+//s22
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>queue operation</h1><br>
+ 
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+ 
+
+    
+    <input type='radio' name='op' value='1'>Insert an element in queue.<br>
+    <input type='radio' name='op' value='2'>Delete an element from queue.<br>
+    <input type='radio' name='op' value='3'>Display the contents of queue<br>
+    <input type='submit' name='submit' value='submit'>
+
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $a = $_POST['op'];
+    $b = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    switch ($a) {
+        
+        case 1:
+            print_r($b);
+            array_unshift($b, 45);
+            echo "<br>";
+            echo "After insert an element in queue:<br>";
+            print_r($b);
+            break;
+        case 2:
+            print_r($b);
+            array_shift($b);
+            echo "<br>";
+            echo "After delete an element in queue:<br>";
+            print_r($b);
+            break;
+        case 3:
+            print_r($b);
+            break;
+    }
+}
+?>
+
+</body>
+</html>
+
+//s23
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>stack and queue operation</h1><br>
+ 
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+ 
+
+    <input type='radio' name='op' value='1'>Insert an element in stack.<br>
+    <input type='radio' name='op' value='2'>Delete an element from stack.<br>
+    <input type='radio' name='op' value='3'>Display the contents of stack<br>
+    
+    <input type='submit' name='submit' value='submit'>
+
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $a = $_POST['op'];
+    $b = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    switch ($a) {
+        case 1:
+            print_r($b);
+            array_push($b, 10);
+            echo "<br>";
+            echo "After insert an element in stack:<br>";
+            print_r($b);
+            break;
+        case 2:
+            print_r($b);
+            array_pop($b);
+            echo "<br>";
+            echo "After delete an element from stack :<br>";
+            print_r($b);
+            break;
+        case 3:
+            echo "Contents of stack:<br>";
+            print_r($b);
+            break;
+       
+    }
+}
+?>
+
+</body>
+</html>
+
+//s24
+//  WT Slip - 24 Q1
+
+<?php
+
+// Prompt user for file names
+echo "Enter the name of the first file: ";
+$firstFile = trim(fgets(STDIN));
+
+echo "Enter the name of the second file: ";
+$secondFile = trim(fgets(STDIN));
+
+// Check if files exist
+if (!file_exists($firstFile)) {
+    echo "The first file does not exist!\n";
+    exit();
+}
+
+if (!file_exists($secondFile)) {
+    echo "The second file does not exist!\n";
+    exit();
+}
+
+// Read content of the first file
+$firstFileContent = file_get_contents($firstFile);
+
+// Append content of the first file to the second file
+if (file_put_contents($secondFile, $firstFileContent, FILE_APPEND)) {
+    echo "Successfully appended content of $firstFile to $secondFile!\n";
+} else {
+    echo "Failed to append content!\n";
+}
+
+?>
+
+
+//s25
+<?php
+
+$message = '';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['operation'])) {
+        $operation = $_POST['operation'];
+        $filename = isset($_POST['filename']) ? $_POST['filename'] : '';
+
+        if ($operation !== 'd' && empty($filename)) {
+            $message = "Please enter a filename.";
+        } else {
+            switch ($operation) {
+                case 'a':
+                    $message = displayFileType($filename);
+                    break;
+                case 'b':
+                    $message = displayLastAccessTime($filename);
+                    break;
+                case 'c':
+                    $message = displayFileSize($filename);
+                    break;
+                case 'd':
+                    $message = deleteFile($filename);
+                    break;
+                default:
+                    $message = "Invalid operation!";
+            }
+        }
+    }
+}
+
+function displayFileType($filename) {
+    return "File Type: " . mime_content_type($filename);
+}
+
+function displayLastAccessTime($filename) {
+    return "Last Access Time: " . date("F d Y H:i:s.", fileatime($filename));
+}
+
+function displayFileSize($filename) {
+    return "File Size: " . filesize($filename) . " bytes";
+}
+
+function deleteFile($filename) {
+    if (!file_exists($filename)) {
+        return "File does not exist!";
+    }
+
+    if (!is_writable($filename)) {
+        return "File is not writable!";
+    }
+
+    if (unlink($filename)) {
+        return "File deleted successfully!";
+    } else {
+        return "Error deleting the file: " . error_get_last()['message'];
+    }
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Operations</title>
+</head>
+<body>
+
+<h1>File Operations</h1>
+
+<form action="" method="post">
+    Enter Filename: <input type="text" name="filename" required>
+    <br><br>
+    <div>
+        <h2>Choose Operation:</h2>
+        <ul>
+            <li>
+                <input type="radio" name="operation" value="a" id="operation_a">
+                <label for="operation_a">Display type of file</label>
+            </li>
+            <li>
+                <input type="radio" name="operation" value="b" id="operation_b">
+                <label for="operation_b">Display last access time of file</label>
+            </li>
+            <li>
+                <input type="radio" name="operation" value="c" id="operation_c">
+                <label for="operation_c">Display the size of file</label>
+            </li>
+            <li>
+                <input type="radio" name="operation" value="d" id="operation_d">
+                <label for="operation_d">Delete the file</label>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <input type="submit" value="Execute">
+</form>
+
+<?php
+if (!empty($message)) {
+    echo "<p>$message</p>";
+}
+?>
+
+</body>
+</html>
+
+
+//s26
+<?php
+
+$host = "host=127.0.0.1";
+$port = "port=5432";
+$dbname = "dbname=postgres";
+$credentials = "user=postgres password=shubham@123";
+
+$db = pg_connect("$host $port $credentials");
+
+if (!$db) {
+    die("Connection failed: " . pg_last_error());
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['hospitalName'])) {
+    $hospitalName = $_POST['hospitalName'];
+
+    // Use prepared statements to prevent SQL injection
+    $sql = "
+        SELECT Doctor.dname
+        FROM Doctor
+        JOIN Hospital ON Doctor.hosp_no = Hospital.hosp_no
+        WHERE Hospital.hname = $1
+    ";
+
+    $result = pg_query_params($db, $sql, array($hospitalName));
+
+    if (pg_num_rows($result) > 0) {
+        echo '<h2>Doctors at ' . $hospitalName . '</h2>';
+        echo '<ul>';
+
+        while ($row = pg_fetch_assoc($result)) {
+            echo '<li>' . $row["dname"] . '</li>';
+        }
+
+        echo '</ul>';
+    } else {
+        echo 'No doctors found for the specified hospital.';
+    }
+}
+
+pg_close($db);
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Doctors by Hospital</title>
+</head>
+<body>
+    <h1>Find Doctors by Hospital</h1>
+    <form action="" method="post">
+        Hospital Name: <input type="text" name="hospitalName">
+        <input type="submit" value="Find Doctors">
+    </form>
+</body>
+</html>
+
+
+//s27
+//  WT Slip - 24 Q1
+
+<?php
+
+// Prompt user for file names
+echo "Enter the name of the first file: ";
+$firstFile = trim(fgets(STDIN));
+
+echo "Enter the name of the second file: ";
+$secondFile = trim(fgets(STDIN));
+
+// Check if files exist
+if (!file_exists($firstFile)) {
+    echo "The first file does not exist!\n";
+    exit();
+}
+
+if (!file_exists($secondFile)) {
+    echo "The second file does not exist!\n";
+    exit();
+}
+
+// Read content of the first file
+$firstFileContent = file_get_contents($firstFile);
+
+// Append content of the first file to the second file
+if (file_put_contents($secondFile, $firstFileContent, FILE_APPEND)) {
+    echo "Successfully appended content of $firstFile to $secondFile!\n";
+} else {
+    echo "Failed to append content!\n";
+}
+
+?>
+
+
+//s28
+<?php
+
+$file_path = '/var/www/html/student.dat';
+
+// Function to calculate percentage
+function calculate_percentage($data) {
+    list($os, $wt, $ds, $python, $java, $cn) = array_map('floatval', array_slice($data, 2));
+    $total_marks = $os + $wt + $ds + $python + $java + $cn;
+    $percentage = ($total_marks / 600) * 100;
+    return number_format($percentage, 2);
+}
+
+// Check if the file exists
+if (!file_exists($file_path)) {
+    echo "File not found. Please create the 'student.dat' file with data in the specified format.";
+} else {
+    // Read data from the file
+    $students = [];
+    $handle = fopen($file_path, 'r');
+    if ($handle) {
+        // Skip the header
+        fgetcsv($handle);
+
+        while (($data = fgetcsv($handle)) !== false) {
+            $students[] = $data;
+        }
+
+        fclose($handle);
+    } else {
+        echo "Error opening the file.";
+    }
+
+    // Generate an HTML table
+    echo '<table border="1">';
+    echo '<tr><th>Roll No</th><th>Name</th><th>OS</th><th>WT</th><th>DS</th><th>Python</th><th>Java</th><th>CN</th><th>Percentage</th></tr>';
+    
+    foreach ($students as $student) {
+        list($rollno, $name, $os, $wt, $ds, $python, $java, $cn) = $student;
+        $percentage = calculate_percentage($student);
+        
+        echo "<tr>";
+        echo "<td>{$rollno}</td><td>{$name}</td><td>{$os}</td><td>{$wt}</td><td>{$ds}</td><td>{$python}</td><td>{$java}</td><td>{$cn}</td><td>{$percentage}</td>";
+        echo "</tr>";
+    }
+    
+    echo '</table>';
+}
+?>
+
+
+//s29
+<?php
+/*error_reporting(E_ALL);
+ini_set('display_errors', 1);*/
+
+$host = "host=127.0.0.1";
+$port = "port=5432";
+$dbname = "dbname=FileDB";
+$credentials = "user=postgres password=shubham@123";
+
+$db = pg_connect("$host $port $dbname $credentials");
+
+if (!$db) {
+    die("Connection failed: " . pg_last_error());
+}
+
+function displayCommitteeStatus($db) {
+    $result = pg_query($db, "SELECT name, status FROM Committee");
+    if (pg_num_rows($result) > 0) {
+        echo "<table border='1'>
+                <tr>
+                    <th>Committee Name</th>
+                    <th>Status</th>
+                </tr>";
+        while ($row = pg_fetch_assoc($result)) {
+            echo "<tr>
+                    <td>" . $row["name"] . "</td>
+                    <td>" . $row["status"] . "</td>
+                  </tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "No committees found!";
+    }
+    echo "<br>";
+}
+
+echo "Committee Status Before Update: <br>";
+displayCommitteeStatus($db);
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['title'])) {
+    $title = $_POST['title'];
+    $checkEvent = pg_prepare($db, "check_event", "SELECT eno FROM Event WHERE title = $1");
+    $eventResult = pg_execute($db, "check_event", array($title));
+    
+    if (pg_num_rows($eventResult) == 0) {
+        die("No matching event found for the title: $title");
+    }
+
+    $sql = "
+        UPDATE Committee
+        SET status = 'working'
+        WHERE cno IN (
+            SELECT cno FROM EventCommittee WHERE eno = (
+                SELECT eno FROM Event WHERE title = $1
+            )
+        )
+    ";
+
+    $result = pg_prepare($db, "update_status", $sql);
+    $execResult = pg_execute($db, "update_status", array($title));
+    
+    if ($execResult) {
+        echo "Committee status updated successfully!<br>";
+    } else {
+        echo "Error updating status: " . pg_last_error($db) . "<br>";
+    }
+
+    echo "<br>Committee Status After Update: <br>";
+    displayCommitteeStatus($db);
+} else {
+    echo '
+    <form action="" method="post">
+        Event Title: <input type="text" name="title">
+        <input type="submit" value="Update Committee Status">
+    </form>
+    ';
+}
+
+pg_close($db);
+?>
+
+
+//s30
+<?php
+
+$host = "host=127.0.0.1";
+$port = "port=5432";
+$dbname = "dbname=competition_db";
+$credentials = "user=postgres password=shubham@123";
+
+$db = pg_connect("$host $port $credentials");
+
+if (!$db) {
+    die("Connection failed: " . pg_last_error());
+}
+
+// Create the database if it doesn't exist
+// Note: The database creation part is removed because it's non-trivial to check and create databases in PostgreSQL within the same connection. It's recommended to create the database manually or through an admin interface.
+
+// Check and create tables if they don't exist
+$result = pg_query($db, "SELECT 1 FROM pg_tables WHERE tablename = 'student'");
+if (pg_num_rows($result) == 0) {
+    pg_query($db, "CREATE TABLE Student (Stud_id INT PRIMARY KEY, name VARCHAR(255), class VARCHAR(255))");
+    pg_query($db, "INSERT INTO Student VALUES (1, 'Alice', '10A'), (2, 'Bob', '10B'), (3, 'Charlie', '10C')");
+}
+
+$result = pg_query($db, "SELECT 1 FROM pg_tables WHERE tablename = 'competition'");
+if (pg_num_rows($result) == 0) {
+    pg_query($db, "CREATE TABLE Competition (c_no INT PRIMARY KEY, c_name VARCHAR(255), type VARCHAR(255))");
+    pg_query($db, "INSERT INTO Competition VALUES (1, 'Math Challenge', 'Academic'), (2, 'Coding Challenge', 'Technical'), (3, 'Art Contest', 'Creative')");
+}
+
+$result = pg_query($db, "SELECT 1 FROM pg_tables WHERE tablename = 'studentcompetition'");
+if (pg_num_rows($result) == 0) {
+    pg_query($db, "CREATE TABLE StudentCompetition (Stud_id INT, c_no INT, rank INT, year INT, PRIMARY KEY(Stud_id, c_no))");
+    pg_query($db, "INSERT INTO StudentCompetition VALUES (1, 1, 1, 2023), (2, 2, 1, 2023), (3, 3, 1, 2023)");
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['c_name'])) {
+    $c_name = $_POST['c_name'];
+
+    $sql = "
+        SELECT Student.name, Student.class
+        FROM Student
+        JOIN StudentCompetition ON Student.Stud_id = StudentCompetition.Stud_id
+        JOIN Competition ON StudentCompetition.c_no = Competition.c_no
+        WHERE Competition.c_name = $1 AND StudentCompetition.rank = 1
+    ";
+
+    $result = pg_query_params($db, $sql, array($c_name));
+    if (pg_num_rows($result) > 0) {
+        while ($row = pg_fetch_assoc($result)) {
+            echo "Student Name: " . $row["name"] . "<br>";
+            echo "Class: " . $row["class"] . "<br>";
+        }
+    } else {
+        echo "No student secured 1st rank in the given competition.";
+    }
+} else {
+    echo '
+    <form action="" method="post">
+        Competition Name: <input type="text" name="c_name">
+        <input type="submit" value="Find 1st Rank">
+    </form>
+    ';
+}
+
+pg_close($db);
+
+?>
+
+
+
+
+
+
+
+
