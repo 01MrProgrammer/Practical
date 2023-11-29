@@ -1,0 +1,67 @@
+import java.io.*;
+import java.util.*;
+
+
+class MyDate
+{
+	int day, month, year;
+	
+	void accept()
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter day: ");
+		this.day = sc.nextInt();
+		
+		System.out.print("Enter month: ");
+		this.month = sc.nextInt();
+		
+		System.out.print("Enter year: ");
+		this.year = sc.nextInt();
+	}
+	
+	void display()
+	{
+		System.out.println("Your Date: " + day + "-" + month + "-" + year);
+	}
+}
+
+public class setB_q3
+{
+	public static void main(String args[])
+	{
+		MyDate md = new MyDate();
+		md.accept();
+		md.display();
+		
+		try
+		{
+			// check if the month is february and day exceeds 28
+			if(md.day == 0 || md.month == 0 || md.year == 0)
+				throw new InvalidDateException("Invalid value for date.");
+			
+			// check if it is february month and day is less than 28
+			if(md.month == 02 || md.month == 2)
+			{
+				if(md.day > 28)
+					throw new InvalidDateException("February month cannot have " + md.day + " days.");
+			}
+			
+			// check if the month is 12, do we have a year with 13 months ?
+			if(md.month > 12)
+				throw new InvalidDateException("A year cannot exceed 12 months.");
+		}
+		catch(Exception e)
+		{
+			System.out.print(e);
+		}
+	}
+}
+
+
+class InvalidDateException extends Exception
+{
+	InvalidDateException(String message)
+	{
+		System.out.println(message);
+	}
+}

@@ -1,0 +1,29 @@
+package ebhor.frame;
+ 
+import javax.swing.JFrame;
+ 
+public class RegisterFrame extends JFrame {
+ 
+    public RegisterFrame() {
+ 
+    }
+ 
+    public void setBounds() {
+ 
+    }
+ 
+    public void addComponents() {
+ 
+    }
+ 
+    public static void main(String[] args) {
+        RegisterFrame frame = new RegisterFrame();
+        frame.setTitle("Student Register Form");
+        frame.setVisible(true);
+        frame.setBounds(500, 100, 500, 700);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(true);
+ 
+    }
+ 
+}

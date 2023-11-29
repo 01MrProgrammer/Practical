@@ -1,72 +1,26 @@
-import java.util.*;
-class continent
-{
-    String continent_name;
-    void get()
-    {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter continent name: ");
-        continent_name=sc.nextLine();
-    }
-    void display()
-    {
-        System.out.println("\nContinent Name: "+continent_name);
-    }
-}
-class country extends continent
-{
-    String country_name;
-    void get()
-    {
-        super.get();
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter country name: ");
-        country_name=sc.nextLine();
-    }
-    void display()
-    {
-        super.display();
-        System.out.println("Country Name: "+country_name);
-    }
-}
-class state extends country
-{
-    String state_name;
-    void get()
-    {
-        super.get();
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter state name: ");
-        state_name=sc.nextLine();
-    }
-    void display()
-    {
-        super.display();
-        System.out.println("State Name: "+state_name);
-    }
-}
-class place extends state
-{
-    String place_name;
-    void get()
-    {
-        super.get();
-        Scanner sc= new Scanner(System.in);
-        System.out.println("Enter place name: ");
-        place_name=sc.nextLine();
-    }
-    void display()
-    {
-        super.display();
-        System.out.println("Place Name: "+place_name);
-    }
-}
-public class Main
-{
+import java.util.Date;
+import java.text.SimpleDateFormat;
+class Main{
     public static void main(String args[])
     {
-        place st=new place();
-        st.get();
-        st.display();
+        SimpleDateFormat sd=new SimpleDateFormat("dd/mm/yyyy");
+        String d1=sd.format(new Date());
+        System.out.println("Date:"+d1);
+
+        sd=new SimpleDateFormat("dd-mm-yyyy");
+        d1= sd.format(new Date());
+        System.out.println("Date:"+d1);
+
+        sd=new SimpleDateFormat("EEEEEEEEE MMMMM dd yyyy");
+        d1=sd.format(new Date());
+        System.out.println("Date:"+d1);
+
+        sd= new SimpleDateFormat("EEE MMMMM dd HH:mm:ss z yyyy");
+        d1=sd.format(new Date());
+        System.out.println("Date:"+d1);
+
+        sd= new SimpleDateFormat("dd/mm/yy HH:mm:ss a SSSZ");
+        d1=sd.format(new Date());
+        System.out.println("Date:"+d1);
     }
 }

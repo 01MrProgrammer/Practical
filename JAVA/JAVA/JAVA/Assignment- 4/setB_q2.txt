@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+
+class EmailID
+{
+	String username, password;
+	
+	EmailId()
+	{
+		username = "u0_225";
+		password = "123456";
+	}
+	
+	EmailId(String username, String password)
+	{
+		this.username = username;
+		this.password = password;
+	}
+}
+
+public class setB_q2
+{
+	public static void main(String args[])
+	{
+		EmailID eid = new EmailId(args[0], args[1]);
+		try
+		{
+			if(EmailId.username.compareTo(eid.username) == 0 && EmailId.password.compareTo(eid.password))
+				throw new NullPointerException("\n");
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+}

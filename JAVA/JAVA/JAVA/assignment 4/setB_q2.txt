@@ -1,0 +1,62 @@
+import java.io.*;
+import java.util.*;
+
+class EmailId
+{
+	String username, password;
+	
+	EmailId()
+	{
+		username = "u0_229";
+		password = "123456";
+	}
+	
+	EmailId(String username, String password)
+	{
+		this.username = username;
+		this.password = password;
+	}
+}
+
+public class setB_q2
+{
+	public static void main(String args[])
+	{
+		EmailId tempeid = new EmailId();
+		EmailId eid = new EmailId(args[0], args[1]);
+		try
+		{
+			if(eid.username.compareTo(tempeid.username) != 0)
+				throw new InvalidUsernameException("Invalid username occured.");
+			else if(eid.password.compareTo(tempeid.password) != 0)
+				throw new InvalidPasswordException("Invalid password occured.");
+			
+			System.out.println("Username & Password is Correct. Welcome !");
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		finally
+		{
+			System.out.println("The program execution is done !");
+		}
+	}
+}
+
+class InvalidUsernameException extends Exception
+{
+	InvalidUsernameException(String message)
+	{
+		System.out.println(message);
+	}
+}
+
+class InvalidPasswordException extends Exception
+{
+	InvalidPasswordException(String message)
+	{
+		System.out.println(message);
+	}
+}
+
